@@ -1,0 +1,406 @@
+/* TITLE: Stylesheet for Purple Haze
+   /* URI  : /purplehaze/purplehaze.css
+      /* MODIF: 2002-12-15 17:34 +0800
+
+
+         /* ###### Color Scheme ###### */
+
+         /*
+            * CHANGING THE COLOR SCHEME
+            * -------------------------
+            * 
+            * Four basic colors were used in the design. To change the
+            * color scheme, just edit these four values below.
+            *
+            */
+
+         .topOfPage, q, h1, h2, h3, .headerTitle, .headerTitleMain, .headerLinks, .headerLinks *, .sideBox div, #footer *
+         { /* Text Color: */  color: #707070; /*#006619;*/ }
+
+q, h2,  #header, .sideBox, .sideBox div, #footer
+{ /* Border Color: */  border-color: #ffffff; /*#9b0079;*/ }
+
+#header, .sideBox div, .sideBox a:hover
+{ /* Background Color (darker): */  background-color: #113a70; }
+
+q, .sideBox a, .sideBox span, #footer
+{ /* Background Color (lighter): */  background-color: #fcfcff; }
+
+a {
+    color:#4D87CE;
+    font-weight:bold;
+    text-decoration:none;
+    }
+
+a:hover {
+          color:#2a65ad;
+          }
+
+
+.currentPage { color: #000000; }
+/* ###### Browser-specific Styles ###### */
+
+/* For IE & Mozilla-based browsers: */
+
+.LHS {
+       margin-left: 2.5mm;
+       float: left;
+       clear: left;
+       }
+
+.RHS {
+       margin-right: 2.5mm;
+       float: right;
+       clear: right;
+       }
+
+/* For Mozilla-based (CSS2-fully complaint) browsers only: */
+
+[class~="LHS"] {
+                 margin-left: 5mm;
+                 }
+
+[class~="RHS"] {
+                 margin-right: 5mm;
+                 }
+
+
+/* ###### Body Text ###### */
+
+#bodyText {
+            line-height: 1.5em;
+            margin: 10mm 1em 0 13em;
+            padding: 0 1em 1ex 1em;
+            }
+
+#bodyText p {
+              padding-bottom: 2ex;
+              }
+
+.topOfPage {
+             font-size: 90%;
+             font-weight: bold;
+             font-variant: small-caps;
+             text-decoration: none;
+             padding-left: 1ex;
+             padding-right: 1ex;
+             float: right;
+             }
+
+.smallCaps {
+             font-variant: small-caps;
+             }
+
+body {
+       font-family:arial, sans-serif;
+       background-color: white; /*#f0f0f0;*/
+       color: black;
+       font-size: medium;
+       margin: 0;
+       }
+
+h1, h2, h3 {
+             font-family:arial, sans-serif;
+             /*font-family: "trebuchet ms", tahoma, sans-serif;*/
+             }
+
+h1 { 
+     font-weight:bold;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     margin-top: 60px; 
+     margin-bottom: 40px; 
+     font-weight: bold; 
+     color: white;
+     background: #113a70;
+     text-align: center;
+     }
+
+
+h2 {
+     font-weight:bold;
+     padding-top: 5px;
+     padding-bottom: 5px;
+     text-align: center;
+     margin-top: 60px; 
+     margin-bottom: 10px; 
+     font-weight: bold; 
+     color: white;
+     background: #113a70;
+     text-align: center;
+     }
+
+h3 {
+     /*font-weight: bold;*/
+     font-size: medium;
+     font-weight: bold; 
+     /*   border-bottom: 1px solid; */
+     padding-top: 20px;
+     padding-bottom: 10px;
+     text-align: left;
+     color: black;
+     }
+
+h4 {
+     padding-bottom: 0ex;
+     margin: 0;
+     }
+
+code {
+       font-family: "lucida console", monospace;
+       font-size: 90%;
+       }
+
+img {
+      border: 0;
+      padding: 1ex 0ex 0ex 0ex;
+      }
+
+q {
+    font-family: tahoma, verdana, helvetica, arial, sans-serif;
+    font-weight: bold;
+    border: 2px dotted;
+    margin: 0 1em 1ex 1em;
+    padding: 0.5ex 0.5ex 0.5ex 1ex;
+    width: 9em;
+    float: left;
+    }
+
+.image_right {
+               padding: 0.5ex 0.5ex 0.5ex 1ex;
+               float: right;
+               clear: right;
+               }
+
+
+/* Splashy inset! */
+
+#spinset {
+         margin-top:1em;
+         padding-bottom:0em;
+         padding-top:0em;
+         padding-left:1em;
+         padding-right:1em;
+         margin-bottom:0em;
+         margin-left:2em;
+         margin-right:2em;
+         text-align:center;
+         font-family:arial, sans-serif;
+         font-size: medium;
+         border-style:ridge;
+         background: orange;
+         color:black;
+         }
+
+#spinset h3 {
+     font-weight: bold;
+     text-align: center;
+     }
+
+
+#spinset a:link { 
+                font-weight: normal;
+                background: orange;
+                color:black;
+                font-weight:bold;
+                text-decoration: underline;
+                }
+
+#spinset a:visited { 
+                   font-weight: normal;
+                   background: orange;
+                   color:black;
+                   font-weight:bold;
+                   text-decoration: underline;
+                   }
+
+
+
+
+
+/* Inset */
+
+#inset {
+         margin-top:1em;
+         padding-bottom:0em;
+         padding-top:0em;
+         padding-left:1em;
+         padding-right:1em;
+         margin-bottom:0em;
+         margin-left:2em;
+         margin-right:2em;
+         text-align:center;
+         font-family:arial, sans-serif;
+         font-size: medium;
+         border-style:ridge;
+         background: #B0E0E6;
+         color:black;
+         }
+
+#inset h3 {
+     /*font-weight: bold;*/
+     text-align: center;
+     }
+
+
+#inset a:link { 
+                font-weight: normal;
+                background: #B0E0E6;
+                color:black;
+                font-weight:bold;
+                text-decoration: underline;
+                }
+
+#inset a:visited { 
+                   font-weight: normal;
+                   background: #B0E0E6;
+                   color:black;
+                   font-weight:bold;
+                   text-decoration: underline;
+                   }
+
+
+
+
+
+
+/* ###### Header ###### */
+
+#header {
+          border-bottom: 2px solid;
+          border-top: 2px solid;
+          height: 5.5em;
+          margin-bottom: 10mm;
+          margin-top: 2mm;
+          padding: 0 5mm 0 5mm;
+          border-color: #9999bb;
+          }
+
+#header h1, .headerTitle {
+                           text-align: center;
+                           font-weight:normal;
+                           letter-spacing: 10px;
+                           font-size: 250%;
+                           font-variant: small-caps;
+                           line-height: 1em;
+                           margin: 0mm 0em 0 0em;
+                           padding: 0.2em 0em 0.2em 0em;
+                           }
+
+.headerTitleMain {
+                   font-size: 300%;
+                   text-align: left;
+                   font-variant: small-caps;
+                   width: 8em;
+                   float: left;
+                   }
+
+.headerLinks {
+               text-align: center;
+               }
+
+.headerLinks * {
+                 text-decoration: none;
+                 font-weight: bold;
+                 padding-right: 1ex;
+                 }
+
+.headerLinks a:hover {
+                       text-decoration: underline;
+                       }
+
+.headerLinks * {
+                 color: #aaaaaa;
+                 }
+
+#header h1, .headerTitleMain, .headerLinks a {
+                                               background: #113a70;
+                                               color: white;
+                                               }
+
+
+
+
+
+
+
+/* ###### Side Box ###### */
+
+.sideBox {
+           border-top: 2px solid;
+           border-left: 2px solid;
+           border-bottom: 2px solid;
+           border-right: 2px solid;
+           width: 10em;
+           margin-top: 0mm;
+           position: fixed;
+           color:#000000;
+           background:#113a70;
+           font-family:arial, sans-serif;
+           border-color:#4e93f1 #36455a #36455a #3374cc;
+           font-size: medium;
+           border-style:solid;
+           display: inline;
+           }
+
+.sideBox div {
+               font-weight: bold;
+               padding: 0.75ex 0.5em 0.75ex 0.75em;
+               color: white;
+               text-align: center;
+               }
+
+.sideBox a, .sideBox span {
+                            color: #006619;
+                            text-decoration: none;
+                            line-height: 1.25em;
+                            display: block;
+                            padding: 0.75ex 0.5ex 0.75ex 0.5ex;
+                            }
+
+.sideBox a:hover {
+                   color: black;
+                   background: #B0C4DE;
+                   text-decoration: none;
+                   line-height: 1.25em;
+                   display: block;
+                   padding: 0.75ex 0.5ex 0.75ex 0.5ex;
+                   }
+
+
+/* ###### Footer ###### */
+
+#footer {
+          color:#707070;
+          background: white;
+          text-decoration:none;
+          font-size:smaller;
+          font-family:arial, sans-serif;
+          text-align: center;
+          padding-top: 3ex;
+          padding-bottom: 3ex;
+          }
+
+.footerImg {
+             padding-right: 3mm;
+             padding-top: 2mm;
+             float: right;
+             }
+
+#footer div {
+              padding-left: 3mm;
+              }
+
+#footer * {
+            background-color: inherit;
+            font-size: 92%;
+            }
+
+#footer a:hover {
+                  text-decoration: none;
+                  }
+
+.footerCol2 {
+              position: absolute;
+              left: 7em;
+              }

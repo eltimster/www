@@ -1,0 +1,27 @@
+I love to receive email from prospective PhD students with a strong background
+in computer science, linguistics and maths. However, I receive an inordinate
+number of requests from students who clearly have little idea of what research
+I am involved in, so to avoid genuine enquiries getting lost in the spam,
+I have instigated the following protocol for prospective students:
+
+- I am not able to take on interns. Rather than respond to each such request
+  personally in the negative, allow me to make a blanket statement here that I
+  unfortunately can't help you out, and wish you the best with your
+  search. There, I've put it out there, so don't expect any email response
+  from me for any such enquiries.
+
+- As a general rule, I won't take on any PhD students wanting to do generic
+  data mining/machine learning projects, unless you can make a specific case
+  for how your proposed project relates directly to my work in computational
+  linguistics. Any requests for PhD supervision in areas not relating to my
+  research interests demonstrate that you haven't done your homework in
+  checking my web page and spotting this statement, in which case, don't
+  expect to get any response from me.
+
+- Assuming you don't fall into either of the above categories, I'd love to
+  hear from you. In your initial email, make sure to include a CV and a brief
+  statement of your research interests (or actual proposal if you have one).
+
+
+Tim Baldwin
+tb@ldwin.net
