@@ -1,0 +1,416 @@
+/* Modern academic CV stylesheet */
+
+:root {
+  --page-background: #f3f5f7;
+  --surface: #ffffff;
+  --text: #20252b;
+  --muted-text: #5f6873;
+  --heading: #17324d;
+  --accent: #176b87;
+  --accent-hover: #0d4f67;
+  --rule: #dce3e8;
+  --soft-fill: #f7f9fa;
+
+  --content-width: 1040px;
+  --date-column-width: 9rem;
+}
+
+/* ---------- Base layout ---------- */
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  max-width: var(--content-width);
+  margin: 2.5rem auto;
+  padding: 3.5rem 4rem;
+
+  color: var(--text);
+  background: var(--surface);
+
+  font-family:
+    Inter,
+    ui-sans-serif,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  font-size: 1rem;
+  line-height: 1.55;
+
+  box-shadow:
+    0 1px 2px rgb(16 24 40 / 4%),
+    0 12px 32px rgb(16 24 40 / 8%);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: var(--page-background);
+}
+
+/* Override legacy indentation rules */
+dl,
+ul,
+ol,
+dir,
+menu,
+table,
+dd,
+p {
+  margin-left: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+}
+
+/* ---------- Headings ---------- */
+
+h2,
+h3,
+h4 {
+  font-family: inherit;
+  color: var(--heading);
+}
+
+h2 {
+  margin: 0 0 3rem;
+  padding-bottom: 1rem;
+
+  font-size: clamp(2rem, 5vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -0.045em;
+  text-align: left;
+
+  border-bottom: 4px solid var(--accent);
+}
+
+h2::after {
+  content: "Timothy Baldwin";
+  display: block;
+  margin-top: 0.65rem;
+
+  color: var(--muted-text);
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  margin: 3.5rem 0 1.25rem;
+  padding-bottom: 0.55rem;
+
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+
+  border-bottom: 1px solid var(--rule);
+}
+
+h4 {
+  margin: 2rem 0 0.65rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Existing italic/bold subsection labels */
+dd > i:first-child,
+dd > b:first-child,
+dd > i:first-child b {
+  color: var(--heading);
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+}
+
+/* ---------- Tables ---------- */
+
+table {
+  width: 100% !important;
+  margin: 0 0 1.25rem;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+tr {
+  border-bottom: 1px solid var(--rule);
+}
+
+tr:last-child {
+  border-bottom: 0;
+}
+
+td {
+  padding: 0.85rem 0.65rem !important;
+  vertical-align: top;
+}
+
+/* Dates / labels */
+td:first-child {
+  width: var(--date-column-width);
+  min-width: var(--date-column-width);
+
+  color: var(--muted-text);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.45;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Main entry */
+td:nth-child(2) {
+  padding-left: 1.25rem !important;
+}
+
+/*
+  Hide spacer rows used in the legacy HTML:
+  rows with a single blank cell should not create large gaps.
+*/
+tr:has(td:only-child) td:empty,
+tr:has(td:only-child) td:has(> br:only-child) {
+  display: none;
+}
+
+/* Subtle row emphasis without looking like a data grid */
+tbody tr:not(:has(td:only-child)):hover {
+  background: var(--soft-fill);
+}
+
+/* Personal-details table */
+dl:first-of-type table td:first-child {
+  color: var(--heading);
+  font-weight: 700;
+}
+
+dl:first-of-type table tr {
+  border-bottom: 1px solid var(--rule);
+}
+
+/* ---------- Text emphasis ---------- */
+
+strong,
+b {
+  color: #192b3b;
+  font-weight: 650;
+}
+
+em,
+i {
+  color: #3f4b56;
+}
+
+/* ---------- Links ---------- */
+
+a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+a:visited {
+  color: var(--accent);
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 3px solid rgb(23 107 135 / 25%);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------- Definition lists ---------- */
+
+dl {
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+/* ---------- Footer ---------- */
+
+#footer {
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+
+  color: var(--muted-text);
+  background: transparent;
+
+  font-family: inherit;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#footer * {
+  background: transparent;
+  font-size: inherit;
+}
+
+.footerImg,
+.footerCol2 {
+  position: static;
+  float: none;
+  padding: 0;
+}
+
+/* ---------- Responsive layout ---------- */
+
+@media (max-width: 760px) {
+  :root {
+    --date-column-width: 6.5rem;
+  }
+
+  body {
+    margin: 0;
+    padding: 2rem 1.25rem;
+    box-shadow: none;
+  }
+
+  h2 {
+    margin-bottom: 2.25rem;
+  }
+
+  h3 {
+    margin-top: 2.75rem;
+  }
+
+  td {
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+  }
+
+  td:nth-child(2) {
+    padding-left: 0.75rem !important;
+  }
+}
+
+@media (max-width: 520px) {
+  table,
+  tbody,
+  tr,
+  td {
+    display: block;
+    width: 100% !important;
+  }
+
+  tr {
+    padding: 0.85rem 0;
+  }
+
+  td {
+    padding: 0 !important;
+  }
+
+  td:first-child {
+    width: auto;
+    min-width: 0;
+    margin-bottom: 0.3rem;
+
+    color: var(--accent);
+    font-size: 0.8rem;
+    letter-spacing: 0.035em;
+  }
+
+  td:nth-child(2) {
+    padding-left: 0 !important;
+  }
+
+  tbody tr:hover {
+    background: transparent;
+  }
+}
+
+/* ---------- Print ---------- */
+
+@media print {
+  @page {
+    size: A4;
+    margin: 14mm 15mm;
+  }
+
+  :root {
+    --text: #000000;
+    --muted-text: #333333;
+    --heading: #000000;
+    --accent: #000000;
+    --rule: #b8b8b8;
+  }
+
+  html {
+    font-size: 9.5pt;
+  }
+
+  body {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  body::before {
+    display: none;
+  }
+
+  h2 {
+    margin-bottom: 1.8rem;
+    border-bottom-width: 2px;
+  }
+
+  h3 {
+    margin-top: 2rem;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  table,
+  tr {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  tr:hover {
+    background: transparent;
+  }
+
+  a,
+  a:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  #footer {
+    display: none;
+  }
+}
